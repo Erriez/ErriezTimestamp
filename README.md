@@ -8,7 +8,7 @@ Any Arduino board.
 
 ## Usage
 
-###Initialization
+### Initialization
 
 Add include file:
 ```c++
@@ -25,7 +25,7 @@ Create timestamp object with milliseconds resolution:
 TimestampMillis timestamp;
 ```
 
-###Single measurement
+### Single measurement
 ```c++
 unsigned long duration;
   
@@ -40,7 +40,7 @@ timestamp.start();
 duration = timestamp.end();
 ```
 
-###Multiple measurements
+### Multiple measurements
 ```c++
 // Start timestamp
 timestamp.start();
@@ -51,7 +51,7 @@ timestamp.print();
 timestamp.print();
 ```
 
-##Constraints
+## Constraints
 TimestampMicros uses the function micros().
 TimestampMillis uses the function millis().
   
