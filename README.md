@@ -51,13 +51,23 @@ timestamp.print();
 timestamp.print();
 ```
 
+##Constraints
+TimestampMicros uses the function micros().
+TimestampMillis uses the function millis().
+  
+Please refer to the description of these functions for the maximum possible
+duration:
+  
+https://www.arduino.cc/reference/en/language/functions/time/micros/
+https://www.arduino.cc/reference/en/language/functions/time/millis/
+
 ## Examples
 The following examples are available:
 * Timestamp | Microseconds
 * Timestamp | Milliseconds
 
 ## Example output Timestamp | Microseconds
-```c++
+```
 Timestamp with microseconds resolution example
   
 Printing this message takes: 768us
@@ -68,7 +78,7 @@ digitalRead() duration: 4us
 ```
 
 ## Example output Timestamp | Milliseconds
-```c++
+```
 Timestamp with milliseconds resolution example
   
 delay(15) takes:
