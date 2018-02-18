@@ -97,6 +97,6 @@ delay(15) takes:
 ## Library installation
 1. Start the Arduino IDE.
 2. Download the latest version from:  
-   https://github.com/Erriez/ArduinoLibraryTimestamp/archive/master.zip
+   https://github.com/Erriez/ErriezTimestamp/archive/master.zip
 3. Click Sketch | Include Library | Add .ZIP Library... and select this ZIP.
 5. Run the example.
