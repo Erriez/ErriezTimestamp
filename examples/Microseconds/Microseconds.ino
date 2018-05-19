@@ -38,6 +38,9 @@ void setup()
 
   // Initialize Serial port
   Serial.begin(115200);
+  while (!Serial) {
+    ;
+  }
   Serial.println(F("Timestamp with microseconds resolution example\n"));
 
   // Start timestamp
