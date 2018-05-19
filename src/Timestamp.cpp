@@ -38,26 +38,26 @@ void TimestampMicros::start()
 
 unsigned long TimestampMicros::end()
 {
-  unsigned long timestampDelta;
+    unsigned long timestampDelta;
 
-  timestampDelta = micros() - _timestampStart;
-  _timestampStart = micros();
+    timestampDelta = micros() - _timestampStart;
+    _timestampStart = micros();
 
-  return timestampDelta;
+    return timestampDelta;
 }
 
 unsigned long TimestampMicros::print()
 {
-  unsigned long timestampDelta;
+    unsigned long timestampDelta;
 
-  timestampDelta = micros() - _timestampStart;
+    timestampDelta = micros() - _timestampStart;
 
-  Serial.print(timestampDelta);
-  Serial.println(F("us"));
+    Serial.print(timestampDelta);
+    Serial.println(F("us"));
 
-  _timestampStart = micros();
+    _timestampStart = micros();
 
-  return timestampDelta;
+    return timestampDelta;
 }
 
 //------------------------------------------------------------------------------
@@ -65,28 +65,28 @@ unsigned long TimestampMicros::print()
 //------------------------------------------------------------------------------
 void TimestampMillis::start()
 {
-  _timestampStart = millis();
+    _timestampStart = millis();
 }
 
 unsigned long TimestampMillis::end()
 {
-  unsigned long timestampDelta;
+    unsigned long timestampDelta;
 
-  timestampDelta = millis() - _timestampStart;
-  _timestampStart = millis();
+    timestampDelta = millis() - _timestampStart;
+    _timestampStart = millis();
 
-  return timestampDelta;
+    return timestampDelta;
 }
 
-unsigned long  TimestampMillis::print()
+unsigned long TimestampMillis::print()
 {
-  unsigned long timestampDelta;
+    unsigned long timestampDelta;
 
-  timestampDelta = millis() - _timestampStart;
-  _timestampStart = millis();
+    timestampDelta = millis() - _timestampStart;
+    _timestampStart = millis();
 
-  Serial.print(timestampDelta);
-  Serial.println(F("ms"));
+    Serial.print(timestampDelta);
+    Serial.println(F("ms"));
 
-  return timestampDelta;
+    return timestampDelta;
 }

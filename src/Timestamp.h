@@ -22,37 +22,37 @@
  * SOFTWARE.
  */
 
-#ifndef TIMESTAMP_H__
-#define TIMESTAMP_H__
+#ifndef TIMESTAMP_H_
+#define TIMESTAMP_H_
 
 #include <Arduino.h>
 
 class Timestamp
 {
-  public:
+public:
     Timestamp();
     virtual void start() = 0;
     virtual unsigned long end() = 0;
     virtual unsigned long  print() = 0;
 
-  protected:
+protected:
     unsigned long _timestampStart;
 };
 
 class TimestampMicros : Timestamp
 {
-  public:
+public:
     void start() override;
     unsigned long end() override;
     unsigned long  print() override;
 };
 
-class TimestampMillis  : Timestamp
+class TimestampMillis : Timestamp
 {
-  public:
+public:
     void start() override;
     unsigned long end() override;
     unsigned long  print() override;
 };
 
-#endif // TIMESTAMP_H__
+#endif // TIMESTAMP_H_
