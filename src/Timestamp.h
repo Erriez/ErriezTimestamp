@@ -55,4 +55,4 @@ class TimestampMillis  : Timestamp
     unsigned long  print() override;
 };
 
-#endif TIMESTAMP_H__
+#endif // TIMESTAMP_H__
