@@ -50,15 +50,6 @@ timestamp.print();
 timestamp.print();
 ```
 
-## Constraints
-TimestampMicros uses the function micros().
-TimestampMillis uses the function millis().
-
-Please refer to the description of these functions for the maximum possible duration:
-
-https://www.arduino.cc/reference/en/language/functions/time/micros/
-https://www.arduino.cc/reference/en/language/functions/time/millis/
-
 ## Examples
 The following examples are available:
 * Timestamp | [Microseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino)
@@ -92,10 +83,20 @@ delay(15) takes:
 15ms
 ```
 
+## Constraints
+
+TimestampMicros uses the function micros().
+TimestampMillis uses the function millis().
+
+Please refer to the description of these functions for the maximum possible duration:
+
+- https://www.arduino.cc/reference/en/language/functions/time/micros/
+- https://www.arduino.cc/reference/en/language/functions/time/millis/
+
 ## Library documentation
 
-[Doxygen online HTML](https://Erriez.github.io/ErriezTimestamp)
-[Doxygen PDF](https://github.com/Erriez/ErriezTimestamp/raw/master/doc/latex/refman.pdf)
+* [Doxygen online HTML](https://Erriez.github.io/ErriezTimestamp)
+* [Doxygen PDF](https://github.com/Erriez/ErriezTimestamp/raw/master/docs/latex/refman.pdf)
 
 ## Library installation
 
