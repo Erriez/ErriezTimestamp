@@ -22,8 +22,18 @@
  * SOFTWARE.
  */
 
+/*!
+ * \file Timestamp.cpp
+ * \brief Timestamp library for Arduino
+ * \details
+ *      https://github.com/Erriez/ErriezTimestamp
+ */
+
 #include "Timestamp.h"
 
+/*!
+ * \brief Timestamp constructor
+ */
 Timestamp::Timestamp() : _timestampStart(0)
 {
 }
@@ -31,11 +41,18 @@ Timestamp::Timestamp() : _timestampStart(0)
 //------------------------------------------------------------------------------
 // Timestamp micros
 //------------------------------------------------------------------------------
+/*!
+ * \brief Start measurement in microseconds
+ */
 void TimestampMicros::start()
 {
     _timestampStart = micros();
 }
 
+/*!
+ * \brief End measurement
+ * \return Duration in micro seconds
+ */
 unsigned long TimestampMicros::end()
 {
     unsigned long timestampDelta;
@@ -46,6 +63,10 @@ unsigned long TimestampMicros::end()
     return timestampDelta;
 }
 
+/*!
+ * \brief Print measurement in microseconds
+ * \return Duration in microseconds
+ */
 unsigned long TimestampMicros::print()
 {
     unsigned long timestampDelta;
@@ -63,11 +84,18 @@ unsigned long TimestampMicros::print()
 //------------------------------------------------------------------------------
 // Timestamp millis
 //------------------------------------------------------------------------------
+/*!
+ * \brief Start measurement in milliseconds
+ */
 void TimestampMillis::start()
 {
     _timestampStart = millis();
 }
 
+/*!
+ * \brief End measurement
+ * \return Duration in milliseconds
+ */
 unsigned long TimestampMillis::end()
 {
     unsigned long timestampDelta;
@@ -78,6 +106,10 @@ unsigned long TimestampMillis::end()
     return timestampDelta;
 }
 
+/*!
+ * \brief Print measurement in milliseconds
+ * \return Duration in milliseconds
+ */
 unsigned long TimestampMillis::print()
 {
     unsigned long timestampDelta;

@@ -23,62 +23,64 @@
  */
 
 /* Timestamp with microseconds resolution example
- * Source: https://github.com/Erriez/ArduinoLibraryTimestamp
+ * Source: https://github.com/Erriez/ErriezTimestamp
  */
 
 #include <Arduino.h>
+
 #include <Timestamp.h>
 
 // Create timestamp with microseconds resolution
 TimestampMicros timestamp;
 
+
 void setup()
 {
-  unsigned long durationUs;
+    unsigned long durationUs;
 
-  // Initialize Serial port
-  Serial.begin(115200);
-  while (!Serial) {
-    ;
-  }
-  Serial.println(F("Timestamp with microseconds resolution example\n"));
+    // Initialize Serial port
+    Serial.begin(115200);
+    while (!Serial) {
+        ;
+    }
+    Serial.println(F("Timestamp with microseconds resolution example\n"));
 
-  // Start timestamp
-  timestamp.start();
-  Serial.print(F("Printing this message takes: "));
-  // Print timestamp
-  timestamp.print();
-  Serial.print(F("And this message takes: "));
-  // Print another timestamp without calling start()
-  timestamp.print();
+    // Start timestamp
+    timestamp.start();
+    Serial.print(F("Printing this message takes: "));
+    // Print timestamp
+    timestamp.print();
+    Serial.print(F("And this message takes: "));
+    // Print another timestamp without calling start()
+    timestamp.print();
 
-  // Do something...
+    // Do something...
 
-  // Start timestamp again
-  timestamp.start();
-  delayMicroseconds(15);
-  // Get timestamp end before the print
-  durationUs = timestamp.end();
-  // Print timestamp
-  Serial.print(F("delayMicroseconds(15) durationUs: "));
-  Serial.print(durationUs);
-  Serial.println(F("us"));
+    // Start timestamp again
+    timestamp.start();
+    delayMicroseconds(15);
+    // Get timestamp end before the print
+    durationUs = timestamp.end();
+    // Print timestamp
+    Serial.print(F("delayMicroseconds(15) durationUs: "));
+    Serial.print(durationUs);
+    Serial.println(F("us"));
 
-  // Start timestamp again
-  timestamp.start();
-  volatile int value = analogRead(0);
-  durationUs = timestamp.end();
-  Serial.print(F("analogRead() durationUs: "));
-  Serial.print(durationUs);
-  Serial.println(F("us"));
+    // Start timestamp again
+    timestamp.start();
+    volatile int value = analogRead(0);
+    durationUs = timestamp.end();
+    Serial.print(F("analogRead() durationUs: "));
+    Serial.print(durationUs);
+    Serial.println(F("us"));
 
-  // Start timestamp again
-  timestamp.start();
-  volatile int digitalRead(0);
-  durationUs = timestamp.end();
-  Serial.print(F("digitalRead() durationUs: "));
-  Serial.print(durationUs);
-  Serial.println(F("us"));
+    // Start timestamp again
+    timestamp.start();
+    volatile int digitalRead(0);
+    durationUs = timestamp.end();
+    Serial.print(F("digitalRead() durationUs: "));
+    Serial.print(durationUs);
+    Serial.println(F("us"));
 }
 
 void loop()

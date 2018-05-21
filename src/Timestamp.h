@@ -22,23 +22,38 @@
  * SOFTWARE.
  */
 
+/*!
+* \file Timestamp.h
+* \brief Timestamp library for Arduino
+* \details
+*      https://github.com/Erriez/ErriezTimestamp
+*/
+
 #ifndef TIMESTAMP_H_
 #define TIMESTAMP_H_
 
 #include <Arduino.h>
 
+
+/*!
+ * \brief Timstamp class
+ */
 class Timestamp
 {
 public:
     Timestamp();
-    virtual void start() = 0;
-    virtual unsigned long end() = 0;
-    virtual unsigned long  print() = 0;
+    virtual void start() = 0;           //!< Derived class must implement start()
+    virtual unsigned long end() = 0;    //!< Derived class must implement end()
+    virtual unsigned long print() = 0;  //!< Derived class must implement print()
 
 protected:
-    unsigned long _timestampStart;
+    unsigned long _timestampStart;      //!< Timestamp at the beginning of a measurement
 };
 
+
+/*!
+ * \brief TimestampMicros class derived from Timestamp
+ */
 class TimestampMicros : Timestamp
 {
 public:
@@ -47,6 +62,9 @@ public:
     unsigned long  print() override;
 };
 
+/*!
+ * \brief TimestampMillis class derived from Timestamp
+ */
 class TimestampMillis : Timestamp
 {
 public:

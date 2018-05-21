@@ -23,39 +23,41 @@
  */
 
 /* Timestamp with milliseconds resolution example
- * Source: https://github.com/Erriez/ArduinoLibraryTimestamp
+ * Source: https://github.com/Erriez/ErriezTimestamp
  */
 
 #include <Arduino.h>
+
 #include <Timestamp.h>
 
 // Create timestamp with milliseconds resolution
 TimestampMillis timestamp;
 
+
 void setup()
 {
-  unsigned long timestampEnd;
+    unsigned long timestampEnd;
 
-  // Initialize Serial port
-  Serial.begin(115200);
-  while (!Serial) {
-      ;
-  }
-  Serial.println(F("Timestamp with milliseconds resolution example\n"));
+    // Initialize Serial port
+    Serial.begin(115200);
+    while (!Serial) {
+        ;
+    }
+    Serial.println(F("Timestamp with milliseconds resolution example\n"));
 
-  Serial.println(F("delay(15) takes:"));
+    Serial.println(F("delay(15) takes:"));
 
-  // Start timestamp
-  timestamp.start();
+    // Start timestamp
+    timestamp.start();
 
-  // Print timestamp 10 times
-  for (int i = 0; i < 10; i++) {
-    // Wait ~15ms
-    delay(15);
+    // Print timestamp 10 times
+    for (int i = 0; i < 10; i++) {
+        // Wait ~15ms
+        delay(15);
 
-    // Print timestamp
-    timestamp.print();
-  }
+        // Print timestamp
+        timestamp.print();
+    }
 }
 
 void loop()
