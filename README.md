@@ -99,6 +99,6 @@ Please refer to the description of these functions for the maximum possible dura
 * [Doxygen online HTML](https://Erriez.github.io/ErriezTimestamp)
 * [Doxygen PDF](https://github.com/Erriez/ErriezTimestamp/raw/master/docs/latex/refman.pdf)
 
-## Library installation using GIT (preferred)
+## Library installation
 
 Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
