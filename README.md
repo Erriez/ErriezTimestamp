@@ -3,6 +3,8 @@
 
 This is a timestamp library for Arduino to measure execution durations in microseconds or milliseconds resolution.
 
+![Timestamp](https://raw.githubusercontent.com/Erriez/ErriezTimestamp/master/extras/timestamp.jpg)
+
 ## Hardware
 Any Arduino / ESP8266 board.
 
