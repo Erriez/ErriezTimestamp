@@ -1,4 +1,5 @@
 # Timestamp measuring library for Arduino
+[![Build Status](https://travis-ci.org/Erriez/ErriezTimestamp.svg?branch=master)](https://travis-ci.org/Erriez/ErriezTimestamp)
 
 This is a timestamp library for Arduino to measure execution durations in microseconds or milliseconds resolution.
 
