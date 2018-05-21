@@ -66,15 +66,16 @@ $(function() {
 <div class="title"><a class="el" href="class_timestamp.html" title="Timstamp class. ">Timestamp</a> measuring library for Arduino </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This is a timestamp library for Arduino to measure execution durations in microseconds or milliseconds resolution.</p>
+<div class="textblock"><p><a href="https://travis-ci.org/Erriez/ErriezTimestamp"></a></p>
+<p>This is a timestamp library for Arduino to measure execution durations in microseconds or milliseconds resolution.</p>
 <h2>Hardware</h2>
 <p>Any Arduino / ESP8266 board.</p>
 <h2>Usage</h2>
 <h3>Initialization</h3>
 <p>Add include file: </p><div class="fragment"><div class="line">{c++}</div><div class="line">#include &lt;Timestamp.h&gt;</div></div><!-- fragment --><p>Create timestamp object with microseconds resolution: </p><div class="fragment"><div class="line">{c++}</div><div class="line">TimestampMicros timestamp;</div></div><!-- fragment --><p>Create timestamp object with milliseconds resolution: </p><div class="fragment"><div class="line">{c++}</div><div class="line">TimestampMillis timestamp;</div></div><!-- fragment --><p>### Single measurement </p><div class="fragment"><div class="line">{c++}</div><div class="line">unsigned long duration;</div><div class="line"></div><div class="line">// Start measurement</div><div class="line">timestamp.start();</div><div class="line">// Do something</div><div class="line">duration = timestamp.end();</div><div class="line"></div><div class="line">// Start new measurement</div><div class="line">timestamp.start();</div><div class="line">// Do something</div><div class="line">duration = timestamp.end();</div></div><!-- fragment --><p>### Multiple measurements </p><div class="fragment"><div class="line">{c++}</div><div class="line">// Start timestamp</div><div class="line">timestamp.start();</div><div class="line">// Do something and print timstamp</div><div class="line">timestamp.print();</div><div class="line"></div><div class="line">// Do something and print timestamp without calling start()</div><div class="line">timestamp.print();</div></div><!-- fragment --><h2>Examples</h2>
 <p>The following examples are available:</p><ul>
-<li><a class="el" href="class_timestamp.html" title="Timstamp class. ">Timestamp</a> | <a href="https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino">Microseconds</a></li>
-<li><a class="el" href="class_timestamp.html" title="Timstamp class. ">Timestamp</a> | <a href="https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino">Milliseconds</a></li>
+<li>Examples | Erriez <a class="el" href="class_timestamp.html" title="Timstamp class. ">Timestamp</a> | <a href="https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino">Microseconds</a></li>
+<li>Examples | Erriez <a class="el" href="class_timestamp.html" title="Timstamp class. ">Timestamp</a> | <a href="https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino">Milliseconds</a></li>
 </ul>
 <p>## Example output <a class="el" href="class_timestamp.html" title="Timstamp class. ">Timestamp</a> | Microseconds </p><div class="fragment"><div class="line">Timestamp with microseconds resolution example</div><div class="line"></div><div class="line">Printing this message takes: 768us</div><div class="line">And this message takes: 2044us</div><div class="line">delayMicroseconds(15) duration: 20us</div><div class="line">analogRead() duration: 212us</div><div class="line">digitalRead() duration: 4us</div></div><!-- fragment --><p>## Example output <a class="el" href="class_timestamp.html" title="Timstamp class. ">Timestamp</a> | Milliseconds </p><div class="fragment"><div class="line">Timestamp with milliseconds resolution example</div><div class="line"></div><div class="line">delay(15) takes:</div><div class="line">15ms</div><div class="line">14ms</div><div class="line">16ms</div><div class="line">15ms</div><div class="line">15ms</div><div class="line">16ms</div><div class="line">14ms</div><div class="line">15ms</div><div class="line">16ms</div><div class="line">15ms</div></div><!-- fragment --><h2>Constraints</h2>
 <p><a class="el" href="class_timestamp_micros.html" title="TimestampMicros class derived from Timestamp. ">TimestampMicros</a> uses the function micros(). <a class="el" href="class_timestamp_millis.html" title="TimestampMillis class derived from Timestamp. ">TimestampMillis</a> uses the function millis().</p>
@@ -88,14 +89,8 @@ $(function() {
 <li><a href="https://Erriez.github.io/ErriezTimestamp">Doxygen online HTML</a></li>
 <li><a href="https://github.com/Erriez/ErriezTimestamp/raw/master/docs/latex/refman.pdf">Doxygen PDF</a></li>
 </ul>
-<h2>Library installation</h2>
-<ol type="1">
-<li>Start the Arduino IDE.</li>
-<li>Download the latest version from: <br />
- <a href="https://github.com/Erriez/ErriezTimestamp/archive/master.zip">https://github.com/Erriez/ErriezTimestamp/archive/master.zip</a></li>
-<li>Click Sketch | Include Library | Add .ZIP Library... and select this ZIP.</li>
-<li>Run the example. </li>
-</ol>
+<h2>Library installation using GIT (preferred)</h2>
+<p>Please refer to the <a href="https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki">Wiki</a> page. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

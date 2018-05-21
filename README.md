@@ -101,34 +101,4 @@ Please refer to the description of these functions for the maximum possible dura
 
 ## Library installation using GIT (preferred)
 
-1. Install [GIT client](https://git-scm.com/downloads).
-2. Run the following commands on the command line to install the library once:
-
-**Windows**
-
-```
-cd C:\Users\%USERNAME%\Documents\Arduino\libraries
-git clone https://github.com/Erriez/ErriezTimestamp.git
-```
-
-**Linux**
-
-```
-cd ~/Arduino/libraries
-git clone https://github.com/Erriez/ErriezTimestamp.git
-```
-
-3. Run the following commands to retrieve the latest updates:
-
-```
-git pull
-```
-
-4. Restart the Arduino IDE and build an example.
-
-## Library installation using ZIP (no automatic updates)
-
-1. Download a [release ZIP](https://github.com/Erriez/ErriezTimestamp/releases).
-2. Start the Arduino IDE.
-3. Click Sketch | Include Library | Add .ZIP Library... and select this ZIP.
-4. Build an example.
+Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
