@@ -53,8 +53,8 @@ timestamp.print();
 
 ## Examples
 The following examples are available:
-* Timestamp | [Microseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino)
-* Timestamp | [Milliseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino)
+* Examples | Erriez Timestamp | [Microseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino)
+* Examples | Erriez Timestamp | [Milliseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino)
 
 ## Example output Timestamp | Microseconds
 ```
@@ -99,10 +99,36 @@ Please refer to the description of these functions for the maximum possible dura
 * [Doxygen online HTML](https://Erriez.github.io/ErriezTimestamp)
 * [Doxygen PDF](https://github.com/Erriez/ErriezTimestamp/raw/master/docs/latex/refman.pdf)
 
-## Library installation
+## Library installation using GIT (preferred)
 
-1. Start the Arduino IDE.
-2. Download the latest version from:  
-   https://github.com/Erriez/ErriezTimestamp/archive/master.zip
+1. Install [GIT client](https://git-scm.com/downloads).
+2. Run the following commands on the command line to install the library once:
+
+**Windows**
+
+```
+cd C:\Users\%USERNAME%\Documents\Arduino\libraries
+git clone https://github.com/Erriez/ErriezTimestamp.git
+```
+
+**Linux**
+
+```
+cd ~/Arduino/libraries
+git clone https://github.com/Erriez/ErriezTimestamp.git
+```
+
+3. Run the following commands to retrieve the latest updates:
+
+```
+git pull
+```
+
+4. Restart the Arduino IDE and build an example.
+
+## Library installation using ZIP (no automatic updates)
+
+1. Download a [release ZIP](https://github.com/Erriez/ErriezTimestamp/releases).
+2. Start the Arduino IDE.
 3. Click Sketch | Include Library | Add .ZIP Library... and select this ZIP.
-5. Run the example.
+4. Build an example.
