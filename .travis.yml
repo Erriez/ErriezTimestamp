@@ -34,5 +34,5 @@ install:
    - platformio update
 
 script:
-   - platformio ci --lib="." --project-conf=platformio/platformio.ini ../examples/Microseconds/Microseconds.ino
-   - platformio ci --lib="." --project-conf=platformio/platformio.ini ../examples/Milliseconds/Milliseconds.ino
+   - platformio ci --lib="." --project-conf=platformio/platformio.ini examples/Microseconds/Microseconds.ino
+   - platformio ci --lib="." --project-conf=platformio/platformio.ini examples/Milliseconds/Milliseconds.ino
