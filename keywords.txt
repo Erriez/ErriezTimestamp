@@ -5,18 +5,18 @@
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
-TimestampMicros		KEYWORD1
-TimestampMillis		KEYWORD1
-Timestamp			KEYWORD1
-timestamp			KEYWORD1
+TimestampMicros	KEYWORD1
+TimestampMillis	KEYWORD1
+Timestamp	KEYWORD1
+timestamp	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-start		KEYWORD2
-end			KEYWORD2
-print		KEYWORD2
+start	KEYWORD2
+end	KEYWORD2
+print	KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
