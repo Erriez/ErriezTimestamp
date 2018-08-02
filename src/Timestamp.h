@@ -26,7 +26,8 @@
 * \file Timestamp.h
 * \brief Timestamp library for Arduino
 * \details
-*      https://github.com/Erriez/ErriezTimestamp
+*      Source:         https://github.com/Erriez/ErriezTimestamp
+*      Documentation:  https://erriez.github.io/ErriezTimestamp
 */
 
 #ifndef TIMESTAMP_H_

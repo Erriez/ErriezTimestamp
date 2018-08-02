@@ -23,7 +23,8 @@
  */
 
 /* Timestamp with microseconds resolution example
- * Source: https://github.com/Erriez/ErriezTimestamp
+ * Source:         https://github.com/Erriez/ErriezTimestamp
+ * Documentation:  https://erriez.github.io/ErriezTimestamp
  */
 
 #include <Arduino.h>

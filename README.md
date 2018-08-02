@@ -5,58 +5,22 @@ This is a timestamp library for Arduino to measure execution durations in micros
 
 ![Timestamp](https://raw.githubusercontent.com/Erriez/ErriezTimestamp/master/extras/timestamp.png)
 
+
 ## Hardware
 Any Arduino / ESP8266 board.
 
-## Usage
 
-### Initialization
+## Library documentation
 
-Add include file:
-```c++
-#include <Timestamp.h>
-```
+* [Doxygen online HTML](https://Erriez.github.io/ErriezTimestamp)
+* [Doxygen PDF](https://github.com/Erriez/ErriezTimestamp/raw/gh-pages/latex/ErriezTimestamp.pdf)
 
-Create timestamp object with microseconds resolution: 
-```c++
-TimestampMicros timestamp;
-```
-
-Create timestamp object with milliseconds resolution: 
-```c++
-TimestampMillis timestamp;
-```
-
-### Single measurement
-```c++
-unsigned long duration;
-  
-// Start measurement
-timestamp.start();
-// Do something
-duration = timestamp.end();
-  
-// Start new measurement
-timestamp.start();
-// Do something
-duration = timestamp.end();
-```
-
-### Multiple measurements
-```c++
-// Start timestamp
-timestamp.start();
-// Do something and print timstamp
-timestamp.print();
-  
-// Do something and print timestamp without calling start()
-timestamp.print();
-```
 
 ## Examples
 The following examples are available:
 * Examples | Erriez Timestamp | [Microseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino)
 * Examples | Erriez Timestamp | [Milliseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino)
+
 
 ## Example output Timestamp | Microseconds
 ```
@@ -86,6 +50,53 @@ delay(15) takes:
 15ms
 ```
 
+
+## Usage
+
+### Initialization
+
+Add include file:
+```c++
+#include <Timestamp.h>
+```
+
+Create timestamp object with microseconds resolution:
+```c++
+TimestampMicros timestamp;
+```
+
+Create timestamp object with milliseconds resolution:
+```c++
+TimestampMillis timestamp;
+```
+
+### Single measurement
+```c++
+unsigned long duration;
+
+// Start measurement
+timestamp.start();
+// Do something
+duration = timestamp.end();
+
+// Start new measurement
+timestamp.start();
+// Do something
+duration = timestamp.end();
+```
+
+### Multiple measurements
+```c++
+// Start timestamp
+timestamp.start();
+// Do something and print timstamp
+timestamp.print();
+
+// Do something and print timestamp without calling start()
+timestamp.print();
+```
+
+
 ## Constraints
 
 TimestampMicros uses the function micros().
@@ -96,14 +107,11 @@ Please refer to the description of these functions for the maximum possible dura
 - https://www.arduino.cc/reference/en/language/functions/time/micros/
 - https://www.arduino.cc/reference/en/language/functions/time/millis/
 
-## Library documentation
-
-* [Doxygen online HTML](https://Erriez.github.io/ErriezTimestamp)
-* [Doxygen PDF](https://github.com/Erriez/ErriezTimestamp/raw/master/docs/latex/refman.pdf)
 
 ## Library installation
 
 Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
+
 
 ## Other Arduino Libraries and Sketches from Erriez
 
