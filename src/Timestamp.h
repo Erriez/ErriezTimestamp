@@ -43,9 +43,9 @@ class Timestamp
 {
 public:
     Timestamp();
-    void start() = 0;           //!< Derived class must implement start()
-    unsigned long end() = 0;    //!< Derived class must implement end()
-    unsigned long print() = 0;  //!< Derived class must implement print()
+    virtual void start() = 0;           //!< Derived class must implement start()
+    virtual unsigned long end() = 0;    //!< Derived class must implement end()
+    virtual unsigned long print() = 0;  //!< Derived class must implement print()
 
 protected:
     unsigned long _timestampStart;      //!< Timestamp at the beginning of a measurement
