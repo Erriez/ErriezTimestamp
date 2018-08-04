@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.3)  3 AUG 2018 13:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.4)  4 AUG 2018 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1209,12 +1209,12 @@ Underfull \hbox (badness 10000) detected at line 71
 
 ) [12]
 Chapter 6.
-(./_timestamp_8cpp.tex
+(./_erriez_timestamp_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-) (./_timestamp_8h.tex
+) (./_erriez_timestamp_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -1238,7 +1238,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: E01BB1CF2586395041E12D50F456B1D1;4822.
+(rerunfilecheck)             Checksum: 48A8A8D39B99DFE605FBC48768836EF7;4882.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1247,12 +1247,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
  14743 strings out of 495028
- 209772 string characters out of 6181498
- 295667 words of memory out of 5000000
+ 209828 string characters out of 6181498
+ 296681 words of memory out of 5000000
  17623 multiletter control sequences out of 15000+600000
  56008 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,15n,92p,300b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,15n,92p,368b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -1262,7 +1262,7 @@ rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (19 pages, 110763 bytes).
+Output written on refman.pdf (19 pages, 110871 bytes).
 PDF statistics:
  422 PDF objects out of 1000 (max. 8388607)
  382 compressed objects within 4 object streams
