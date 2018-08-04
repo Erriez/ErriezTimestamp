@@ -52,9 +52,9 @@ include_directories(${LIB_SRC_DIR})
 generate_arduino_library(
         ${PROJECT_NAME}Lib
         SRCS
-            ${LIB_SRC_DIR}/Timestamp.cpp
+            ${LIB_SRC_DIR}/ErriezTimestamp.cpp
         HDRS
-            ${LIB_SRC_DIR}/Timestamp.h
+            ${LIB_SRC_DIR}/ErriezTimestamp.h
 )
 
 # Configure project

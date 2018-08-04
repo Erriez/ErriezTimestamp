@@ -23,14 +23,14 @@
  */
 
 /*!
- * \file Timestamp.cpp
+ * \file ErriezTimestamp.cpp
  * \brief Timestamp library for Arduino
  * \details
  *      Source:         https://github.com/Erriez/ErriezTimestamp
  *      Documentation:  https://erriez.github.io/ErriezTimestamp
  */
 
-#include "Timestamp.h"
+#include "ErriezTimestamp.h"
 
 /*!
  * \brief Timestamp constructor

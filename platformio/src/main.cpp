@@ -28,7 +28,7 @@
 
 #include <Arduino.h>
 
-#include <Timestamp.h>
+#include <ErriezTimestamp.h>
 
 // Create timestamp with microseconds resolution
 TimestampMicros timestamp;

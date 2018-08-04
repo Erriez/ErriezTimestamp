@@ -23,15 +23,15 @@
  */
 
 /*!
-* \file Timestamp.h
-* \brief Timestamp library for Arduino
-* \details
-*      Source:         https://github.com/Erriez/ErriezTimestamp
-*      Documentation:  https://erriez.github.io/ErriezTimestamp
-*/
+ * \file ErriezTimestamp.h
+ * \brief Timestamp library for Arduino
+ * \details
+ *      Source:         https://github.com/Erriez/ErriezTimestamp
+ *      Documentation:  https://erriez.github.io/ErriezTimestamp
+ */
 
-#ifndef TIMESTAMP_H_
-#define TIMESTAMP_H_
+#ifndef ERRIEZ_TIMESTAMP_H_
+#define ERRIEZ_TIMESTAMP_H_
 
 #include <Arduino.h>
 
@@ -74,4 +74,4 @@ public:
     unsigned long  print() override;
 };
 
-#endif // TIMESTAMP_H_
+#endif // ERRIEZ_TIMESTAMP_H_

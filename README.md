@@ -57,7 +57,7 @@ delay(15) takes:
 
 Add include file:
 ```c++
-#include <Timestamp.h>
+#include <ErriezTimestamp.h>
 ```
 
 Create timestamp object with microseconds resolution:
