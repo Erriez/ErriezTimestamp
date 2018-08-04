@@ -12,3 +12,5 @@ rem git pull
 rem Build example(s)
 platformio ci --lib=".." --project-conf=platformio.ini ../examples/Microseconds/Microseconds.ino
 platformio ci --lib=".." --project-conf=platformio.ini ../examples/Milliseconds/Milliseconds.ino
+
+@pause
