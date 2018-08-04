@@ -26,8 +26,6 @@
  * Source: https://github.com/Erriez/ErriezTimestamp
  */
 
-#include <Arduino.h>
-
 #include <ErriezTimestamp.h>
 
 // Create timestamp with microseconds resolution
