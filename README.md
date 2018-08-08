@@ -102,7 +102,8 @@ timestamp.print();
 TimestampMicros uses the function micros().
 TimestampMillis uses the function millis().
 
-Please refer to the description of these functions for the maximum possible duration:
+Please refer to the description of these functions for the maximum possible duration and minimum
+resolution:
 
 - https://www.arduino.cc/reference/en/language/functions/time/micros/
 - https://www.arduino.cc/reference/en/language/functions/time/millis/
