@@ -77,12 +77,12 @@ unsigned long duration;
 // Start measurement
 timestamp.start();
 // Do something
-duration = timestamp.end();
+duration = timestamp.delta();
 
 // Start new measurement
 timestamp.start();
 // Do something
-duration = timestamp.end();
+duration = timestamp.delta();
 ```
 
 ### Multiple measurements

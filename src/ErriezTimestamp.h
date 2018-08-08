@@ -43,12 +43,11 @@ class Timestamp
 {
 public:
     Timestamp();
-    virtual void start() = 0;           //!< Derived class must implement start()
-    virtual unsigned long end() = 0;    //!< Derived class must implement end()
-    virtual unsigned long print() = 0;  //!< Derived class must implement print()
+    virtual void start() = 0;        //!< Derived class must implement start()
+    virtual unsigned long delta() = 0;        //!< Derived class must implement delta()
+    virtual void print() = 0;        //!< Derived class must implement print()
 
-protected:
-    unsigned long _timestampStart;      //!< Timestamp at the beginning of a measurement
+    unsigned long timestampStart;   //!< Timestamp at the beginning of a measurement
 };
 
 
@@ -59,8 +58,8 @@ class TimestampMicros : Timestamp
 {
 public:
     void start() override;
-    unsigned long end() override;
-    unsigned long  print() override;
+    unsigned long delta() override;
+    void print() override;
 };
 
 /*!
@@ -70,8 +69,8 @@ class TimestampMillis : Timestamp
 {
 public:
     void start() override;
-    unsigned long end() override;
-    unsigned long  print() override;
+    unsigned long delta() override;
+    void print() override;
 };
 
 #endif // ERRIEZ_TIMESTAMP_H_
