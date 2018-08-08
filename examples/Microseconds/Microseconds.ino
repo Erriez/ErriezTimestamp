@@ -59,7 +59,7 @@ void setup()
     timestamp.start();
     delayMicroseconds(15);
     // Get timestamp end before the print
-    durationUs = timestamp.end();
+    durationUs = timestamp.delta();
     // Print timestamp
     Serial.print(F("delayMicroseconds(15) durationUs: "));
     Serial.print(durationUs);
@@ -68,7 +68,7 @@ void setup()
     // Start timestamp again
     timestamp.start();
     volatile int value = analogRead(0);
-    durationUs = timestamp.end();
+    durationUs = timestamp.delta();
     Serial.print(F("analogRead() durationUs: "));
     Serial.print(durationUs);
     Serial.println(F("us"));
@@ -76,7 +76,7 @@ void setup()
     // Start timestamp again
     timestamp.start();
     volatile int digitalRead(0);
-    durationUs = timestamp.end();
+    durationUs = timestamp.delta();
     Serial.print(F("digitalRead() durationUs: "));
     Serial.print(durationUs);
     Serial.println(F("us"));

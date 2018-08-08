@@ -35,7 +35,7 @@
 /*!
  * \brief Timestamp constructor
  */
-Timestamp::Timestamp() : _timestampStart(0)
+Timestamp::Timestamp() : timestampStart(0)
 {
 }
 
@@ -47,39 +47,32 @@ Timestamp::Timestamp() : _timestampStart(0)
  */
 void TimestampMicros::start()
 {
-    _timestampStart = micros();
+    timestampStart = micros();
 }
 
 /*!
  * \brief End measurement
- * \return Duration in micro seconds
+ * \return
+ *      Duration in micro seconds
  */
-unsigned long TimestampMicros::end()
+unsigned long TimestampMicros::delta()
 {
-    unsigned long timestampDelta;
-
-    timestampDelta = micros() - _timestampStart;
-    _timestampStart = micros();
-
-    return timestampDelta;
+    return micros() - timestampStart;
 }
 
 /*!
  * \brief Print measurement in microseconds
- * \return Duration in microseconds
+ * \details
+ *      Print millis() - start time and restart measurement
+ * \return
+ *      Duration in microseconds
  */
-unsigned long TimestampMicros::print()
+void TimestampMicros::print()
 {
-    unsigned long timestampDelta;
-
-    timestampDelta = micros() - _timestampStart;
-
-    Serial.print(timestampDelta);
+    Serial.print(delta());
     Serial.println(F("us"));
 
-    _timestampStart = micros();
-
-    return timestampDelta;
+    start();
 }
 
 //------------------------------------------------------------------------------
@@ -90,36 +83,30 @@ unsigned long TimestampMicros::print()
  */
 void TimestampMillis::start()
 {
-    _timestampStart = millis();
+    timestampStart = millis();
 }
 
 /*!
  * \brief End measurement
- * \return Duration in milliseconds
+ * \return
+ *      Duration in milliseconds
  */
-unsigned long TimestampMillis::end()
+unsigned long TimestampMillis::delta()
 {
-    unsigned long timestampDelta;
-
-    timestampDelta = millis() - _timestampStart;
-    _timestampStart = millis();
-
-    return timestampDelta;
+    return millis() - timestampStart;
 }
 
 /*!
  * \brief Print measurement in milliseconds
- * \return Duration in milliseconds
+ * \details
+ *      Print millis() - start time and restart measurement
+ * \return
+ *      Duration in milliseconds
  */
-unsigned long TimestampMillis::print()
+void TimestampMillis::print()
 {
-    unsigned long timestampDelta;
-
-    timestampDelta = millis() - _timestampStart;
-    _timestampStart = millis();
-
-    Serial.print(timestampDelta);
+    Serial.print(delta());
     Serial.println(F("ms"));
 
-    return timestampDelta;
+    start();
 }
