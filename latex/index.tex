@@ -18,10 +18,12 @@ Any Arduino / E\+S\+P8266 board.
 
 \subsection*{Examples}
 
-The following examples are available\+:
+Arduino I\+DE $\vert$ Examples $\vert$ Erriez \hyperlink{class_timestamp}{Timestamp}\+:
+
+
 \begin{DoxyItemize}
-\item Examples $\vert$ Erriez \hyperlink{class_timestamp}{Timestamp} $\vert$ \href{https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino}{\tt Microseconds}
-\item Examples $\vert$ Erriez \hyperlink{class_timestamp}{Timestamp} $\vert$ \href{https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino}{\tt Milliseconds}
+\item \href{https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino}{\tt Microseconds}
+\item \href{https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino}{\tt Milliseconds}
 \end{DoxyItemize}
 
 \#\# Example output \hyperlink{class_timestamp}{Timestamp} $\vert$ Microseconds 
@@ -111,7 +113,7 @@ Create timestamp object with milliseconds resolution\+:
 
 \subsection*{Constraints}
 
-\hyperlink{class_timestamp_micros}{Timestamp\+Micros} uses the function micros(). \hyperlink{class_timestamp_millis}{Timestamp\+Millis} uses the function millis().
+\hyperlink{class_timestamp_micros}{Timestamp\+Micros} uses the function {\ttfamily micros()}. \hyperlink{class_timestamp_millis}{Timestamp\+Millis} uses the function millis().
 
 Please refer to the description of these functions for the maximum possible duration and minimum resolution\+:
 
@@ -120,6 +122,8 @@ Please refer to the description of these functions for the maximum possible dura
 \item \href{https://www.arduino.cc/reference/en/language/functions/time/micros/}{\tt https\+://www.\+arduino.\+cc/reference/en/language/functions/time/micros/}
 \item \href{https://www.arduino.cc/reference/en/language/functions/time/millis/}{\tt https\+://www.\+arduino.\+cc/reference/en/language/functions/time/millis/}
 \end{DoxyItemize}
+
+The micro seconds timestamp functions have small overhead on low-\/end microcontrollers. For example calling {\ttfamily start()} and {\ttfamily delta} may result in it may take 4..8us deviation on an Arduino U\+NO. This is overhead is negligible on targets with a higher C\+PU clock such as the E\+S\+P8266.
 
 \subsection*{Library installation}
 

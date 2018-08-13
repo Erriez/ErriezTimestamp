@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.13)  13 AUG 2018 18:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.13)  13 AUG 2018 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1122,7 +1122,7 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 59.
+(Font)              scaled to size 8.99994pt on input line 61.
  [1
 
 ])
@@ -1153,7 +1153,7 @@ Chapter 4.
 
 ]
 Chapter 5.
-(./class_timestamp.tex <class_timestamp.pdf, id=235, 501.875pt x 171.58102pt>
+(./class_timestamp.tex <class_timestamp.pdf, id=234, 501.875pt x 171.58102pt>
 File: class_timestamp.pdf Graphic file (type pdf)
 
 <use class_timestamp.pdf>
@@ -1168,7 +1168,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 ) (./class_timestamp_micros.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
- [9 <./class_timestamp.pdf>] <class_timestamp_micros.pdf, id=270, 501.875pt x 3
+ [9 <./class_timestamp.pdf>] <class_timestamp_micros.pdf, id=269, 501.875pt x 3
 43.16205pt>
 File: class_timestamp_micros.pdf Graphic file (type pdf)
 
@@ -1191,7 +1191,7 @@ Underfull \hbox (badness 10000) detected at line 71
  []
 
 ) (./class_timestamp_millis.tex
-<class_timestamp_millis.pdf, id=297, 501.875pt x 375.23184pt>
+<class_timestamp_millis.pdf, id=296, 501.875pt x 375.23184pt>
 File: class_timestamp_millis.pdf Graphic file (type pdf)
 
 <use class_timestamp_millis.pdf>
@@ -1248,11 +1248,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
 Here is how much of TeX's memory you used:
  14743 strings out of 495028
  209828 string characters out of 6181497
- 295686 words of memory out of 5000000
+ 296686 words of memory out of 5000000
  17623 multiletter control sequences out of 15000+600000
  56008 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,16n,92p,368b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,378b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -1262,10 +1262,10 @@ rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (19 pages, 110960 bytes).
+Output written on refman.pdf (19 pages, 111535 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 382 compressed objects within 4 object streams
+ 421 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
  76 named destinations out of 1000 (max. 500000)
  224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
