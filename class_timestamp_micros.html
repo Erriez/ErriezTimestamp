@@ -112,19 +112,19 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timestamp_micros.html#a847c7bc584b217cc901b22c1e08b013e">start</a> () override</td></tr>
 <tr class="memdesc:a847c7bc584b217cc901b22c1e08b013e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start measurement in microseconds. <br /></td></tr>
 <tr class="separator:a847c7bc584b217cc901b22c1e08b013e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17b22ddd75040a343cd8c8331228d3b9"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timestamp_micros.html#a17b22ddd75040a343cd8c8331228d3b9">end</a> () override</td></tr>
-<tr class="memdesc:a17b22ddd75040a343cd8c8331228d3b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">End measurement.  <a href="#a17b22ddd75040a343cd8c8331228d3b9">More...</a><br /></td></tr>
-<tr class="separator:a17b22ddd75040a343cd8c8331228d3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fd08e9267a063b5b3e702c3dde87366"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timestamp_micros.html#a2fd08e9267a063b5b3e702c3dde87366">print</a> () override</td></tr>
-<tr class="memdesc:a2fd08e9267a063b5b3e702c3dde87366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print measurement in microseconds.  <a href="#a2fd08e9267a063b5b3e702c3dde87366">More...</a><br /></td></tr>
-<tr class="separator:a2fd08e9267a063b5b3e702c3dde87366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0489e7ea01e5a726b23ee3243868e92"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timestamp_micros.html#ae0489e7ea01e5a726b23ee3243868e92">delta</a> () override</td></tr>
+<tr class="memdesc:ae0489e7ea01e5a726b23ee3243868e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">End measurement.  <a href="#ae0489e7ea01e5a726b23ee3243868e92">More...</a><br /></td></tr>
+<tr class="separator:ae0489e7ea01e5a726b23ee3243868e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2a63d2cd3d42b66186462c2e79b5d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timestamp_micros.html#afb2a63d2cd3d42b66186462c2e79b5d1">print</a> () override</td></tr>
+<tr class="memdesc:afb2a63d2cd3d42b66186462c2e79b5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print measurement in microseconds.  <a href="#afb2a63d2cd3d42b66186462c2e79b5d1">More...</a><br /></td></tr>
+<tr class="separator:afb2a63d2cd3d42b66186462c2e79b5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_timestamp_micros.html" title="TimestampMicros class derived from Timestamp. ">TimestampMicros</a> class derived from <a class="el" href="class_timestamp.html" title="Timstamp class. ">Timestamp</a>. </p>
 
-<p>Definition at line <a class="el" href="_erriez_timestamp_8h_source.html#l00058">58</a> of file <a class="el" href="_erriez_timestamp_8h_source.html">ErriezTimestamp.h</a>.</p>
+<p>Definition at line <a class="el" href="_erriez_timestamp_8h_source.html#l00057">57</a> of file <a class="el" href="_erriez_timestamp_8h_source.html">ErriezTimestamp.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a17b22ddd75040a343cd8c8331228d3b9"></a>
+<a class="anchor" id="ae0489e7ea01e5a726b23ee3243868e92"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -132,7 +132,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long TimestampMicros::end </td>
+          <td class="memname">unsigned long TimestampMicros::delta </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -148,13 +148,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>End measurement. </p>
 <dl class="section return"><dt>Returns</dt><dd>Duration in micro seconds </dd></dl>
 
-<p>Implements <a class="el" href="class_timestamp.html#a47e8cbc581a8af32201e7b1088733043">Timestamp</a>.</p>
+<p>Implements <a class="el" href="class_timestamp.html#afa237f41af2043b2f5d6e0733d595c21">Timestamp</a>.</p>
 
-<p>Definition at line <a class="el" href="_erriez_timestamp_8cpp_source.html#l00057">57</a> of file <a class="el" href="_erriez_timestamp_8cpp_source.html">ErriezTimestamp.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_erriez_timestamp_8cpp_source.html#l00058">58</a> of file <a class="el" href="_erriez_timestamp_8cpp_source.html">ErriezTimestamp.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2fd08e9267a063b5b3e702c3dde87366"></a>
+<a class="anchor" id="afb2a63d2cd3d42b66186462c2e79b5d1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -162,7 +162,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long TimestampMicros::print </td>
+          <td class="memname">void TimestampMicros::print </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -176,11 +176,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Print measurement in microseconds. </p>
-<dl class="section return"><dt>Returns</dt><dd>Duration in microseconds </dd></dl>
+<p>Print millis() - start time and restart measurement </p><dl class="section return"><dt>Returns</dt><dd>Duration in microseconds </dd></dl>
 
-<p>Implements <a class="el" href="class_timestamp.html#a351537b95385937a004ab32b6b3743f7">Timestamp</a>.</p>
+<p>Implements <a class="el" href="class_timestamp.html#a62b55270dae36ad337c87ae30eeb2fb9">Timestamp</a>.</p>
 
-<p>Definition at line <a class="el" href="_erriez_timestamp_8cpp_source.html#l00071">71</a> of file <a class="el" href="_erriez_timestamp_8cpp_source.html">ErriezTimestamp.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_erriez_timestamp_8cpp_source.html#l00070">70</a> of file <a class="el" href="_erriez_timestamp_8cpp_source.html">ErriezTimestamp.cpp</a>.</p>
 
 </div>
 </div>

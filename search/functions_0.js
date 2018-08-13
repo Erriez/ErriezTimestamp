@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['end',['end',['../class_timestamp.html#a47e8cbc581a8af32201e7b1088733043',1,'Timestamp::end()'],['../class_timestamp_micros.html#a17b22ddd75040a343cd8c8331228d3b9',1,'TimestampMicros::end()'],['../class_timestamp_millis.html#ad0bd89a6d30c9ee317dded214dd3084c',1,'TimestampMillis::end()']]]
+  ['delta',['delta',['../class_timestamp.html#afa237f41af2043b2f5d6e0733d595c21',1,'Timestamp::delta()'],['../class_timestamp_micros.html#ae0489e7ea01e5a726b23ee3243868e92',1,'TimestampMicros::delta()'],['../class_timestamp_millis.html#a30f095de20ba61a4367458a942bda0a4',1,'TimestampMillis::delta()']]]
 ];

@@ -21,27 +21,27 @@ Inheritance diagram for Timestamp\+Micros\+:\begin{figure}[H]
 void \hyperlink{class_timestamp_micros_a847c7bc584b217cc901b22c1e08b013e}{start} () override\hypertarget{class_timestamp_micros_a847c7bc584b217cc901b22c1e08b013e}{}\label{class_timestamp_micros_a847c7bc584b217cc901b22c1e08b013e}
 
 \begin{DoxyCompactList}\small\item\em Start measurement in microseconds. \end{DoxyCompactList}\item 
-unsigned long \hyperlink{class_timestamp_micros_a17b22ddd75040a343cd8c8331228d3b9}{end} () override
+unsigned long \hyperlink{class_timestamp_micros_ae0489e7ea01e5a726b23ee3243868e92}{delta} () override
 \begin{DoxyCompactList}\small\item\em End measurement. \end{DoxyCompactList}\item 
-unsigned long \hyperlink{class_timestamp_micros_a2fd08e9267a063b5b3e702c3dde87366}{print} () override
+void \hyperlink{class_timestamp_micros_afb2a63d2cd3d42b66186462c2e79b5d1}{print} () override
 \begin{DoxyCompactList}\small\item\em Print measurement in microseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \hyperlink{class_timestamp_micros}{Timestamp\+Micros} class derived from \hyperlink{class_timestamp}{Timestamp}. 
 
-Definition at line 58 of file Erriez\+Timestamp.\+h.
+Definition at line 57 of file Erriez\+Timestamp.\+h.
 
 
 
 \subsection{Member Function Documentation}
-\index{Timestamp\+Micros@{Timestamp\+Micros}!end@{end}}
-\index{end@{end}!Timestamp\+Micros@{Timestamp\+Micros}}
-\subsubsection[{\texorpdfstring{end() override}{end() override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Timestamp\+Micros\+::end (
+\index{Timestamp\+Micros@{Timestamp\+Micros}!delta@{delta}}
+\index{delta@{delta}!Timestamp\+Micros@{Timestamp\+Micros}}
+\subsubsection[{\texorpdfstring{delta() override}{delta() override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Timestamp\+Micros\+::delta (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_timestamp_micros_a17b22ddd75040a343cd8c8331228d3b9}{}\label{class_timestamp_micros_a17b22ddd75040a343cd8c8331228d3b9}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_timestamp_micros_ae0489e7ea01e5a726b23ee3243868e92}{}\label{class_timestamp_micros_ae0489e7ea01e5a726b23ee3243868e92}
 
 
 End measurement. 
@@ -51,33 +51,33 @@ Duration in micro seconds
 \end{DoxyReturn}
 
 
-Implements \hyperlink{class_timestamp_a47e8cbc581a8af32201e7b1088733043}{Timestamp}.
+Implements \hyperlink{class_timestamp_afa237f41af2043b2f5d6e0733d595c21}{Timestamp}.
 
 
 
-Definition at line 57 of file Erriez\+Timestamp.\+cpp.
+Definition at line 58 of file Erriez\+Timestamp.\+cpp.
 
 \index{Timestamp\+Micros@{Timestamp\+Micros}!print@{print}}
 \index{print@{print}!Timestamp\+Micros@{Timestamp\+Micros}}
-\subsubsection[{\texorpdfstring{print() override}{print() override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Timestamp\+Micros\+::print (
+\subsubsection[{\texorpdfstring{print() override}{print() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Timestamp\+Micros\+::print (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_timestamp_micros_a2fd08e9267a063b5b3e702c3dde87366}{}\label{class_timestamp_micros_a2fd08e9267a063b5b3e702c3dde87366}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_timestamp_micros_afb2a63d2cd3d42b66186462c2e79b5d1}{}\label{class_timestamp_micros_afb2a63d2cd3d42b66186462c2e79b5d1}
 
 
 Print measurement in microseconds. 
 
-\begin{DoxyReturn}{Returns}
+Print millis() -\/ start time and restart measurement \begin{DoxyReturn}{Returns}
 Duration in microseconds 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{class_timestamp_a351537b95385937a004ab32b6b3743f7}{Timestamp}.
+Implements \hyperlink{class_timestamp_a62b55270dae36ad337c87ae30eeb2fb9}{Timestamp}.
 
 
 
-Definition at line 71 of file Erriez\+Timestamp.\+cpp.
+Definition at line 70 of file Erriez\+Timestamp.\+cpp.
 
 
 
