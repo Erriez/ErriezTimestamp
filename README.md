@@ -17,9 +17,11 @@ Any Arduino / ESP8266 board.
 
 
 ## Examples
-The following examples are available:
-* Examples | Erriez Timestamp | [Microseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino)
-* Examples | Erriez Timestamp | [Milliseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino)
+Arduino IDE | Examples | Erriez Timestamp:
+
+* [Microseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino)
+
+* [Milliseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino)
 
 
 ## Example output Timestamp | Microseconds
@@ -99,7 +101,7 @@ timestamp.print();
 
 ## Constraints
 
-TimestampMicros uses the function micros().
+TimestampMicros uses the function ```micros()```.   
 TimestampMillis uses the function millis().
 
 Please refer to the description of these functions for the maximum possible duration and minimum
@@ -108,6 +110,10 @@ resolution:
 - https://www.arduino.cc/reference/en/language/functions/time/micros/
 - https://www.arduino.cc/reference/en/language/functions/time/millis/
 
+
+The micro seconds timestamp functions have small overhead on low-end microcontrollers. For example
+calling ```start()``` and ```delta``` may result in it may take 4..8us deviation on an Arduino UNO.
+This is overhead is negligible on targets with a higher CPU clock such as the ESP8266.
 
 ## Library installation
 
