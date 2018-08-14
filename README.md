@@ -1,7 +1,7 @@
 # Timestamp measuring library for Arduino
 [![Build Status](https://travis-ci.org/Erriez/ErriezTimestamp.svg?branch=master)](https://travis-ci.org/Erriez/ErriezTimestamp)
 
-This is a timestamp library for Arduino to measure execution durations in microseconds or milliseconds resolution.
+This is a timestamp library for Arduino that can be used to measure execution time in microseconds or milliseconds.
 
 ![Timestamp](https://raw.githubusercontent.com/Erriez/ErriezTimestamp/master/extras/timestamp.png)
 
@@ -101,8 +101,8 @@ timestamp.print();
 
 ## Constraints
 
-TimestampMicros uses the function ```micros()```.   
-TimestampMillis uses the function millis().
+TimestampMicros uses the function ```micros()```. 
+TimestampMillis uses the function ```millis()```.
 
 Please refer to the description of these functions for the maximum possible duration and minimum
 resolution:
@@ -111,8 +111,8 @@ resolution:
 - https://www.arduino.cc/reference/en/language/functions/time/millis/
 
 
-The micro seconds timestamp functions have small overhead on low-end microcontrollers. For example
-calling ```start()``` and ```delta``` may result in it may take 4..8us deviation on an Arduino UNO.
+The timestamp functions introduce a small calling overhead on low-end microcontrollers.
+For example calling ```start()``` and ```delta()``` on an Arduino UNO may take an additional 4 to 8 microseconds.
 This is overhead is negligible on targets with a higher CPU clock such as the ESP8266.
 
 ## Library installation
