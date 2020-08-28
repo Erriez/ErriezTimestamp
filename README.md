@@ -13,15 +13,14 @@ Any Arduino / ESP8266 board.
 ## Library documentation
 
 * [Doxygen online HTML](https://Erriez.github.io/ErriezTimestamp)
-* [Doxygen PDF](https://github.com/Erriez/ErriezTimestamp/raw/gh-pages/latex/ErriezTimestamp.pdf)
+* [Doxygen PDF](https://github.com/Erriez/ErriezTimestamp/raw/master/ErriezTimestamp.pdf)
 
 
 ## Examples
 Arduino IDE | Examples | Erriez Timestamp:
 
-* [Microseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Microseconds/Microseconds.ino)
-
-* [Milliseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/Milliseconds/Milliseconds.ino)
+* [ErriezMicroseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/ErriezMicroseconds/ErriezMicroseconds.ino)
+* [ErriezMilliseconds](https://github.com/Erriez/ErriezTimestamp/blob/master/examples/ErriezMilliseconds/ErriezMilliseconds.ino)
 
 
 ## Example output Timestamp | Microseconds
